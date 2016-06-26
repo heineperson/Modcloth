@@ -1,0 +1,484 @@
+table(Canal_lim[!is.na(Soil_Group ) & N_10>=50]$Soil_Group)#
+Canal_lim[!is.na(Soil_Group ) & N_10>=50,list(Mean_Mult = mean(Multiples_1to10), SE_Mult = sd(Multiples_10up)/sqrt(.N)) ,by="Soil_Group"]#
+anova(lm(sqrt(Multiples_1to10)~Soil_Group,data= Canal_lim[N_100>50]))#
+summary(lm(sqrt(Multiples_1to10)~Soil_Group,data= Canal_lim[N_100>50]))
+anova(lm(sqrt(Multiples_1to10)~Soil_Group,data= Canal_lim[N_10>50]))#
+summary(lm(sqrt(Multiples_1to10)~Soil_Group,data= Canal_lim[N_10>50]))
+Multiples_1to10
+Canal_lim
+table(Canal_lim[!is.na(Soil_Group ) & N_mort_1to10>=50]$Soil_Group)#
+Canal_lim[!is.na(Soil_Group ) & N_10>=50,list(Mean_Mult = mean(Multiples_1to10), SE_Mult = sd(Multiples_10up)/sqrt(.N)) ,by="Soil_Group"]#
+anova(lm(sqrt(Multiples_1to10)~Soil_Group,data= Canal_lim[N_mort_1to10>50]))#
+summary(lm(sqrt(Multiples_1to10)~Soil_Group,data= Canal_lim[N_mort_1to10>50]))
+table(Canal_Spp_Mult[!is.na(Soil_Group ) & N_mort_1to10>=50]$Soil_Group)
+#EVALUTING THIS RELATIONSHIP FOR TREES < 10 CM#
+table(Canal_Mult_Spp[!is.na(Soil_Group ) & N_mort_1to10>=50]$Soil_Group)#
+Canal_Mult_Spp[!is.na(Soil_Group ) & N_10>=50,list(Mean_Mult = mean(Multiples_1to10), SE_Mult = sd(Multiples_10up)/sqrt(.N)) ,by="Soil_Group"]#
+anova(lm(sqrt(Multiples_1to10)~Soil_Group,data= Canal_Mult_Spp[N_mort_1to10>50]))#
+summary(lm(sqrt(Multiples_1to10)~Soil_Group,data= Canal_Mult_Spp[N_mort_1to10>50]))
+Canal_Mult_Spp
+table(Canal_Mult_Spp[!is.na(Soil_Group ) & N_mort_1to10>=50]$Soil_Group)
+Canal_Mult_Spp[!is.na(Soil_Group ) & N_10>=50,list(Mean_Mult = mean(Multiples_1to10), SE_Mult = sd(Multiples_1to10)/sqrt(.N)) ,by="Soil_Group"]
+anova(lm(sqrt(Multiples_1to10)~Soil_Group,data= Canal_Mult_Spp[N_mort_1to10>50]))
+summary(lm(sqrt(Multiples_1to10)~Soil_Group,data= Canal_Mult_Spp[N_mort_1to10>50]))
+table(Canal_Mult_Spp[!is.na(Soil_Group ) & N_mort_1to10>=100]$Soil_Group)#
+Canal_Mult_Spp[!is.na(Soil_Group ) & N_10>= 100,list(Mean_Mult = mean(Multiples_1to10), SE_Mult = sd(Multiples_1to10)/sqrt(.N)) ,by="Soil_Group"]#
+anova(lm(sqrt(Multiples_1to10)~Soil_Group,data= Canal_Mult_Spp[N_mort_1to10> 100]))#
+summary(lm(sqrt(Multiples_1to10)~Soil_Group,data= Canal_Mult_Spp[N_mort_1to10> 100]))
+table(Canal_Mult_Spp[!is.na(Soil_Group ) & N_50>=50]$Soil_Group)#
+Canal_Mult_Spp[!is.na(Soil_Group ) & N_10>= 100,list(Mean_Mult = mean(Multiples_1to10), SE_Mult = sd(Multiples_1to10)/sqrt(.N)) ,by="Soil_Group"]#
+anova(lm(sqrt(Multiples_1to10)~Soil_Group,data= Canal_Mult_Spp[ N_50>=50]))#
+summary(lm(sqrt(Multiples_1to10)~Soil_Group,data= Canal_Mult_Spp[ N_50>=50]))
+Canal_Mult_Spp[!is.na(Soil_Group ) & N_50>= 50,list(Mean_Mult = mean(Multiples_1to10), SE_Mult = sd(Multiples_1to10)/sqrt(.N)) ,by="Soil_Group"]
+anova(lm(sqrt(Multiples_1to10)~Soil_Group,data= Canal_Mult_Spp[ N_50>=50]))#
+summary(lm(sqrt(Multiples_1to10)~Soil_Group,data= Canal_Mult_Spp[ N_50>=50]))
+table(Canal_Mult_Spp[!is.na(Soil_Group ) & N_100>=50]$Soil_Group)#
+Canal_Mult_Spp[!is.na(Soil_Group ) & N_100>= 50,list(Mean_Mult = mean(Multiples_1to10), SE_Mult = sd(Multiples_1to10)/sqrt(.N)) ,by="Soil_Group"]#
+anova(lm(sqrt(Multiples_1to10)~Soil_Group,data= Canal_Mult_Spp[ N_100>=50]))#
+summary(lm(sqrt(Multiples_1to10)~Soil_Group,data= Canal_Mult_Spp[ N_100>=50]))
+Canal_Mult_Spp[!is.na(Soil_Group ) & N_100>=50]
+table(Canal_Mult_Spp[!is.na(Soil_Group ) & N_100>=50]$Soil_Group)
+table(Canal_Mult_Spp[!is.na(Soil_Group ) & N_100>=50]$Soil_Group)#
+Canal_Mult_Spp[!is.na(Soil_Group ) & N_100>= 50,list(Mean_Mult = mean(Multiples_10up), SE_Mult = sd(Multiples_10up)/sqrt(.N)) ,by="Soil_Group"]#
+anova(lm(sqrt(Multiples_10up)~Soil_Group,data= Canal_Mult_Spp[ N_100>=50]))#
+summary(lm(sqrt(Multiples_10up)~Soil_Group,data= Canal_Mult_Spp[ N_100>=50]))
+table(Canal_Mult_Spp[!is.na(Soil_Group ) & N_100>=50]$Soil_Group)#
+Canal_Mult_Spp[!is.na(Soil_Group ) & N_100>= 50,list(Mean_Mult = mean(Multiples_10up), SE_Mult = sd(Multiples_10up)/sqrt(.N)) ,by="Soil_Group"]#
+anova(lm(sqrt(Multiples_10up)~Soil_Group,data= Canal_Mult_Spp[ N_100>=100]))#
+summary(lm(sqrt(Multiples_10up)~Soil_Group,data= Canal_Mult_Spp[ N_100>= 100]))
+################################
+####FORTUNA ANALYSIS#
+fortuna =function(x){}#
+#
+Fortuna_Mult_Spp[Type=="Low",Type.Col:="white"]#
+Fortuna_Mult_Spp[Type=="Intermediate",Type.Col:="grey"]#
+Fortuna_Mult_Spp[Type=="High",Type.Col:="black"]#
+#
+Stats_Fortuna = na.omit(Fortuna_Mult_Spp[!(MorphoCode%in%c("COLAPH","EUTPRE","WETQUI")) & N_5up>=50 & log(RGR)>-6,list(MorphoCode,Mult_Freq=(Prop_Mult_5up),#
+            RGR =(RGR),DBH_Max= (DBH_q95),  WoodDensity= wood.density, LeafP = (P),wood.P=(wood.P),LeafN = (N),wood.N = (wood.N))])#
+#All multiples (5cm and greater)#
+#Fortuna_lim = na.omit(Fortuna_Mult_Spp[!(MorphoCode%in%c("COLAPH","EUTPRE","WETQUI")) & N_5up>=50 & log(RGR)>-6,list(MorphoCode,Mult_Freq=sqrt(Prop_Mult_5up),RGR = log(RGR),DBH_Max= log(DBH_q95),  WoodDensity= wood.density,  wood.K=log(wood.K), wood.Ca=log(wood.Ca),wood.P=log(wood.P), wood.N=log(wood.N),Type.Col)])#
+Fortuna_lim = na.omit(Fortuna_Mult_Spp[!(MorphoCode%in%c("COLAPH","EUTPRE","WETQUI")) & N_5up>=50 & log(RGR)>-6,list(MorphoCode,Mult_Freq=sqrt(Prop_Mult_5up),#
+              RGR = log(RGR),DBH_Max= log(DBH_q95),  WoodDensity= wood.density, LeafP = log(P),wood.P=log(wood.P),LeafN = log(N),wood.N = log(wood.N))])#
+#matrix_prelim=na.omit(Fortuna_lim[ ,list(Mult_Freq=log(Prop_Mult+1),RGR = log(RGR),  WoodDensity= wood.density,  P, N,K,wood.P=log(wood.P), wood.N=log(wood.N),wood.K=log(wood.K))])#
+matrix_prelim=Fortuna_lim[,list(Multiples= Mult_Freq,RGR, WoodDensity, LeafP,wood.P,LeafN,wood.N)]#
+PCobj=prcomp(matrix_prelim, scale=T)#
+#biplot(PCobj)#
+#
+#Correlation object#
+cor.obj = rcorr(as.matrix(matrix_prelim),type="pearson")#
+#
+###correlation coefficients#
+cor.obj$r#
+#
+###correlation P values#
+cor.obj$P#
+#
+###making nicer plot#
+scores = PCobj $x#
+#points(PC.axes[,1], PC.axes[,2],cex =  exp(PC.traits$prob.rot.50cm), col="blue")#
+loadings = PCobj $rotation#
+#
+plot(scores[,1],scores[,2], bg= "grey", pch=21,xlab= "PC 1 (46% of variance explained)", ylab = "PC 2 (18% of variance explained)", #
+     cex.lab=1.3, main="Fortuna species")#
+arrows(x0=rep(0, length(names(matrix_prelim))),#
+y0=rep(0, length(names(matrix_prelim))),#
+x1=loadings[,1]*5,#
+y1=loadings[,2]*4 ,length=0.1,col="grey", lwd=2)#
+labels = names(matrix_prelim)#
+labels = c("% Multiples","RGR",  "WD","Leaf P","Wood P", "Leaf N","Wood N")#
+text(x=loadings[,1]*5.5,y=loadings[,2]*4.5, labels, col="black", cex=0.8, font=2)#
+#legend("topright", legend=c("Low Fertility","Intermediate Fertility", "High Fertility"), fill = c("white", "grey", "black"))
+cor.obj
+PC.obj
+PCobj
+summary(PCobj)
+library(rgl)
+plot3d(PCobj$scores,[1:3])
+plot3d(PCobj$scores[,1:3])
+PCobj$scores
+PCobj
+PCobj[1]
+PCobj[2]
+PCobj[3]
+PCobj[4]
+PCobj[5]
+plot3d(PCobj$x[,1:3])
+PCobj
+PCobj[1]
+PCobj[2]
+PCobj[3]
+PCobj[4]
+PCobj[5]
+ownames(PCobj$rotation)
+rownames(PCobj$rotation)
+plot3d(PCobj$x[,1:3])#
+#
+text3d(PCobj$rotation[,1:3], texts= rownames(PCobj$rotation),col="red")
+coords <- NULL#
+for (i in 1:nrow(PCobj$rotation)){#
+	coords <- rbind(coords, rbind(c(0,0,0)), PCobj$rotation[i,1:3])#
+}
+lines3d(coords,col="red",lwd=4)
+?grep
+4000/60
+4000/60/24
+.8/.2
+(894+283)/(894+283+65+33+9)
+727/4
+727/5
+101/5
+101/2
+50.5+145.4
+5*30
+100*100
+27.2*100
+99.5*100
+require(mgcv)#
+require(nlme)#
+b0 <- lme(travel~1,data=Rail,~1|Rail,method="REML")
+b0
+summary(b0)
+100*100*100
+load("/Users/katieheineman/Dropbox/Modcloth/top300reviews.rds")
+dat = read.rds("top300reviews.rds")
+dat = readRDS("top300reviews.rds")
+?readRDS
+setwd("/Users/katieheineman/Dropbox/Modcloth")#
+dat = readRDS("top300reviews.rds")
+dat
+head(dat)
+dress1 = dat[dressTitle=="Abiding Beauty Dress in Black"]
+dress1 = dat[dressTitle=="Abiding Beauty Dress in Black"]
+names(dat)
+ibrary(data.table)#
+#
+setwd("/Users/katieheineman/Dropbox/Modcloth")#
+dat = readRDS("top300reviews.rds")#
+#
+##
+dress1 = dat[dressTitle=="Abiding Beauty Dress in Black"]
+library(data.table)#
+#
+setwd("/Users/katieheineman/Dropbox/Modcloth")#
+dat = readRDS("top300reviews.rds")#
+#
+##
+dress1 = dat[dressTitle=="Abiding Beauty Dress in Black"]
+dress1
+hist(dress1[Size=="S"]$hips)
+hist(dress1[Size=="S"]$Hips)
+unique(dress1$Size)
+unique(dress1$Hips)
+names(dress1)
+names(dress1$dressModelMeasurements)
+names(dat$dressModelMeasurements)
+dat$dressMeasurements
+head(dat$Hips)
+unique(dat$Hips)
+dat[Hips=="an"]
+dat[Hips=="ev"]
+dat[Hips=="-3"]
+unique(dat$Hips)
+dat[Hips%in%c("an","ar","do")]
+dat[dressTitle=="Lakeside Libations Dress in Navy"]
+dat[dressTitle=="Lakeside Libations Dress in Navy",.(Name,Bra, Waist, Hip, Size)][1:5]
+dat[dressTitle=="Lakeside Libations Dress in Navy",.(Name,Bra, Waist, Hips, Size)][1:5]
+dat[dressTitle=="Lakeside Libations Dress in Navy",.(Name,Bra, Waist, Hips, Size)][1:30]
+dat[dressTitle=="Lakeside Libations Dress in Navy",.(Name,Bra, Waist, Hips, Size)][31:61]
+dat[dressTitle=="Lakeside Libations Dress in Navy",.(Name,Bra, Waist, Hips, Size)][62:100]
+dat[dressTitle=="Lakeside Libations Dress in Navy",.(Name,Bra, Waist, Hips, Size)][100:140]
+dat[dressTitle=="Lakeside Libations Dress in Navy",.(Name,Bra, Waist, Hips, Size)][140:180]
+dat[dressTitle=="Lakeside Libations Dress in Navy",.(Name,Bra, Waist, Hips, Size)][180:220]
+dat[dressTitle=="Lakeside Libations Dress in Navy",.(Name,Bra, Waist, Hips, Size)][220:260]
+dat[Hips%in%c("an","ar","do")]
+unique(dat$Hips)
+table(dat$Hips)
+dat[Hips=="Fi"]
+dat[Hips=="Fi" & Name=="Rochelle"]
+dat[Hips=="Fi" & Name=="Katie"]
+dat[ Name=="Katie" & Height=="5'3"""]
+dat[ Name=="Katie" & Height=='5'3"']
+dat[Hips=="Fi" & Name=="Kristin"]
+dat[Hips=="Fi",.(dressTitle,Name)]
+dat[DressTitle=="Indigo Gardens Dress" & Name=="Abigail"]
+dat[dressTitle=="Indigo Gardens Dress" & Name=="Abigail"]
+unique(dat$Hips)
+sort(unique(dat$Hips))
+dat[Hips%in%c("","--","","- ","-3",": ","a","an","ar","do","ev","Fi"), Hips:=NA]
+sort(unique(dat$Hips))
+dat[Hips%in%c("","--","","- ","-3",": ","a","a ""an","ar","do","ev","Fi"), Hips:=NA]
+dat[Hips%in%c("","--","","- ","-3",": ","a","a ","an","ar","do","ev","Fi"), Hips:=NA]
+dat[,Hips:=as.numeric(as.character(Hips))]
+class(dat[,Hips])
+names(dat)
+table(dat$dressReviewCount)
+unique(dat[dressReviewCount>1000]$dressTitle)
+dress1 = dat[dressTitle=="Wish You the Zest Dress"]
+hist(dress1[Size=="S"]$Hips)
+table(dress1$Size)
+head(dress1)
+dim(dress1)
+dress1 = dat[dressTitle=="Wish You the Zest Dress"]
+dim(dress1)
+unique(dat[dressReviewCount>1000]$dressTitle)
+unique(dat[dressReviewCount > 1000]$dressTitle)
+names(dat)
+unique(dat[dressReviewCount > 1000]$dressTitle)
+(dat[dressReviewCount > 1000,.N,by="DressTitle"])
+dat[dressReviewCount > 1000,.(.N),by=dressTitle]
+dat[as.numeric(dressReviewCount) > 1000 ,.(.N),by=dressTitle]
+dat[as.numeric(as.character(dressReviewCount)) > 1000 ,.(.N),by=dressTitle]
+dress1 = dat[dressTitle=="About the Artist Dress in Grey"]#
+#
+hist(dress1[Size=="S"]$Hips)
+names(dress1)
+head(dress1)
+dim(dress1)
+class(dress1$Hips)
+unique(dress1$Size)
+hist(dress1[Size=="S  "]$Hips)
+dress1[Size=="L"]
+dim(dress1[Size=="L  "])
+dress1[,Size1:=gsub("^\\s+|\\s+$", "", Size)]
+unique(dress1$Size1)
+dat[,Size:=gsub("^\\s+|\\s+$", "", Size)]
+hist(dress1[Size=="S"]$Hips)
+#make #
+dat[Hips%in%c("","--","","- ","-3",": ","a","a ","an","ar","do","ev","Fi"), Hips:=NA]#
+dat[,Hips:=as.numeric(as.character(Hips))]#
+dat[,Size:=gsub("^\\s+|\\s+$", "", Size)]#
+#
+#find a dress that has lots of reviews for a variety of sizes#
+#make a histogram for each size (S, M, L)#
+dress1 = dat[dressTitle=="About the Artist Dress in Grey"]#
+#
+#trim white space#
+hist(dress1[Size=="S"]$Hips)
+hist(dress1[Size=="S"]$Hips,breaks=10)
+names(dress1)
+dress1$userRating
+dress1$Fit1
+dress1$Fit
+par(mfcol=c(1,3))#
+hist(dress1[Size=="S" & Fit=="Just Right"]$Hips,breaks=10, main="Size = S, Fit=Just Right")
+par(mfcol=c(1,3))#
+hist(dress1[Size=="S" & Fit=="Just Right"]$Hips,breaks=10, main="Size = S, Fit=Just Right")#
+hist(dress1[Size=="S" & Fit=="Large"]$Hips,breaks=10, main="Size = S, Fit=Large")#
+hist(dress1[Size=="S" & Fit=="Large"]$Hips,breaks=10, main="Size = S, Fit=Small")
+par(mfcol=c(1,3))#
+hist(dress1[Size=="S" & Fit=="Just Right"]$Hips,breaks=10, main="Size = S, Fit=Just Right")#
+hist(dress1[Size=="S" & Fit=="Large"]$Hips,breaks=10, main="Size = S, Fit=Large")#
+hist(dress1[Size=="S" & Fit=="Small"]$Hips,breaks=10, main="Size = S, Fit=Small")
+par(mfcol=c(1,3))#
+hist(dress1[Size=="S" & Fit=="Just Right"]$Hips,breaks=10, main="Size = S, Fit=Just Right")#
+hist(dress1[Size=="S" & Fit%in%c("Large","Very Large")]$Hips,breaks=10, main="Size = S, Fit=Large")#
+hist(dress1[Size=="S" & Fit%in%c("Small","Very Small")]$Hips,breaks=10, main="Size = S, Fit=Small")
+par(mfcol=c(1,3))#
+hist(dress1[Size=="M" & Fit=="Just Right"]$Hips,breaks=10, main="Size = S, Fit=Just Right")#
+hist(dress1[Size=="M" & Fit%in%c("Large","Very Large")]$Hips,breaks=10, main="Size = S, Fit=Large")#
+hist(dress1[Size=="M" & Fit%in%c("Small","Very Small")]$Hips,breaks=10, main="Size = S, Fit=Small")
+unique(dat$Waist)
+sort(unique(dat$Waist))
+dat[Waist%in%c("","--","","- ","-2",", ",": ",":3","= ","a","a ","an","ar","do","ev","Fi", "al","an",#
+"ba","co","Co","di","ed","el","fa","fe","fi","hi","Hi","is","li","me","of","ri","ru","sa","se","si","sl","to","wa","we"), Hips:=NA]#
+dat[, Waist:=as.numeric(as.character(Waist))]
+sort(unique(dat$Waist))
+setwd("/Users/katieheineman/Dropbox/Modcloth")#
+dat = readRDS("top300reviews.rds")#
+#
+#coerce hips into numeric vector#
+dat[Hips%in%c("","--","","- ","-3",": ","a","a ","an","ar","do","ev","Fi"), Hips:=NA]#
+dat[,Hips:=as.numeric(as.character(Hips))]#
+#coerce waist into numeric vector#
+dat[Waist%in%c("","--","","- ",-2,", ",": ",":3","= ","a","a ","an","ar","do","ev","Fi", "al","an",#
+"ba","co","Co","di","ed","el","fa","fe","fi","hi","Hi","is","li","me","of","ri","ru","sa","se","si","sl","to","wa","we"), Hips:=NA]#
+dat[, Waist:=as.numeric(as.character(Waist))]
+sort(unique(dat$Waist))
+setwd("/Users/katieheineman/Dropbox/Modcloth")#
+dat = readRDS("top300reviews.rds")#
+#
+#coerce hips into numeric vector#
+dat[Hips%in%c("","--","","- ","-3",": ","a","a ","an","ar","do","ev","Fi"), Hips:=NA]#
+dat[,Hips:=as.numeric(as.character(Hips))]#
+#coerce waist into numeric vector#
+dat[Waist%in%c("","--","","- ","-2",", ",": ",":3","= ","a","a ","an","ar","do","ev","Fi", "al","an",#
+"ba","co","Co","di","ed","el","fa","fe","fi","hi","Hi","is","li","me","of","ri","ru","sa","se","si","sl","to","wa","we"), Hips:=NA]#
+dat[, Waist:=as.numeric(as.character(Waist))]
+sort(unique(dat$Waist))
+plot(dat$Hips, dat$Waist)
+dat[Waist<0,Waist:=NA]
+plot(dat$Hips, dat$Waist)
+plot(dress1 $Hips, dress1 $Waist,col=as.factor(dress1$Size))
+names(dat)
+plot(dress1 $Hips, dress1 $Fit,col=as.factor(dress1$Size))
+class(dat$Fit)
+unqiue(dat$Fit)
+unique(dat$Fit)
+names(dat)
+unique(dat$userRating)
+plot(dress1 $Hips, dress1 $userRating,col=as.factor(dress1$Size))
+plot(dress1 $Waist, dress1 $userRating,col=as.factor(dress1$Size))
+plot(dat $Waist, dat $userRating,col=as.factor(dat $Size))
+cor.test(dat $Waist, dat $userRating,col=as.factor(dat $Size))
+cor.test(dat $Hips, dat $userRating,col=as.factor(dat $Size))
+plot(dat $Hips, dat $userRating,col=as.factor(dat $Size))
+plot(dat $Hips/dat$Waist, dat $userRating,col=as.factor(dat $Size))
+cor.test(dat $Hips/dat$Waist, dat $userRating,col=as.factor(dat $Size))
+45/27
+plot(dat $Hips/dat$Waist, dat $userRating,col=as.factor(dat $Size),xlim=c(0.5,2))
+library(ggplot2)
+#what i want to do is make an overlapping #
+p <- ggplot(dress1, aes(x=Hips,Group=Size))+geom_density()#
+p
+unique(dress1$Size)
+p <- ggplot(dress1[Size!=""], aes(x=Hips,Group=Size))+geom_density()#
+p
+#what i want to do is make an overlapping #
+p <- ggplot(dress1[Size!=""], aes(x=Hips))+geom_density(aes(group=size, colour= size, fill= size), alpha=0.3)#
+p
+p <- ggplot(dress1[Size!=""], aes(x=Hips))+geom_density(aes(group=Size, colour= Size, fill= Size), alpha=0.3)#
+p
+p <- ggplot(dress1[Size!=""], aes(x=Waist))+geom_density(aes(group=Size, colour= Size, fill= Size), alpha=0.3)#
+p
+dat[, Waist:=as.numeric(as.character(Waist))]#
+dat[Waist<0,Waist:=NA]#
+#
+#looking at hip waist allometry#
+plot(dat$Hips, dat$Waist)#
+#trimming the trailing white space#
+dat[,Size:=gsub("^\\s+|\\s+$", "", Size)]#
+#
+#find a dress that has lots of reviews for a variety of sizes#
+#make a histogram for each size (S, M, L)#
+dress1 = dat[dressTitle=="About the Artist Dress in Grey"]#
+#
+#what i want to do is make an overlapping #
+p <- ggplot(dress1[Size!=""], aes(x=Hips))+geom_density(aes(group=Size, colour= Size, fill= Size), alpha=0.3)#
+p#
+#
+p <- ggplot(dress1[Size!=""], aes(x=Waist))+geom_density(aes(group=Size, colour= Size, fill= Size), alpha=0.3)#
+p
+dress1 = dat[dressTitle=="About the Artist Dress in Grey" & Fit=="Just Right"]#
+#
+#what i want to do is make an overlapping #
+p <- ggplot(dress1[Size!=""], aes(x=Hips))+geom_density(aes(group=Size, colour= Size, fill= Size), alpha=0.3)#
+p#
+#
+p <- ggplot(dress1[Size!=""], aes(x=Waist))+geom_density(aes(group=Size, colour= Size, fill= Size), alpha=0.3)#
+p
+dress1 = dat[dressTitle=="About the Artist Dress in Grey" & Fit=="Just Right"  & !is.na(Hips) & !is.na(Waist)]
+dim(dress1)
+dress1 = dat[dressTitle=="About the Artist Dress in Grey" & Fit%in%c("Just Right","Small","Large")  & !is.na(Hips) & !is.na(Waist)]
+dim(dress1)
+#what i want to do is make an overlapping #
+p <- ggplot(dress1[Size!=""], aes(x=Hips))+geom_density(aes(group=Size, colour= Size, fill= Size), alpha=0.3)#
+p
+p <- ggplot(dress1[Size!=""], aes(x=Waist))+geom_density(aes(group=Size, colour= Size, fill= Size), alpha=0.3)#
+p
+names(dat$dressTitle)
+unique(dat$dressTitle)
+dress1 = dat[dressTitle%in%c("Lady Love Song Dress in Ruby","Lady Love Song Dress in Merlot Velvet") & Fit%in%c("Just Right","Small","Large")  & !is.na(Hips) & !is.na(Waist)]#
+#
+#what i want to do is make an overlapping #
+p <- ggplot(dress1[Size!=""], aes(x=Hips))+geom_density(aes(group=Size, colour= Size, fill= Size), alpha=0.3)#
+p#
+#
+p <- ggplot(dress1[Size!=""], aes(x=Waist))+geom_density(aes(group=Size, colour= Size, fill= Size), alpha=0.3)#
+p
+dim(dress1)
+dress1 = dat[dressTitle%in%c("Lady Love Song Dress in Ruby","Lady Love Song Dress in Merlot Velvet") & Fit%in%c("Just Right")  & !is.na(Hips) & !is.na(Waist)]#
+#
+#what i want to do is make an overlapping #
+p <- ggplot(dress1[Size!=""], aes(x=Hips))+geom_density(aes(group=Size, colour= Size, fill= Size), alpha=0.3)#
+p#
+#
+p <- ggplot(dress1[Size!=""], aes(x=Waist))+geom_density(aes(group=Size, colour= Size, fill= Size), alpha=0.3)#
+p
+table(dress1$Size)
+dress1 = dat[dressTitle%in%c("Kind Intentions Dress") & Fit%in%c("Just Right")  & !is.na(Hips) & !is.na(Waist)]#
+#
+#what i want to do is make an overlapping #
+p <- ggplot(dress1[Size!=""], aes(x=Hips))+geom_density(aes(group=Size, colour= Size, fill= Size), alpha=0.3)#
+p#
+#
+p <- ggplot(dress1[Size!=""], aes(x=Waist))+geom_density(aes(group=Size, colour= Size, fill= Size), alpha=0.3)#
+p
+dress1 = dat[dressTitle%in%c("Kind Intentions Dress") & !is.na(Hips) & !is.na(Waist)]#
+#
+#what i want to do is make an overlapping #
+p <- ggplot(dress1[Size!=""], aes(x=Hips))+geom_density(aes(group=Size, colour= Size, fill= Size), alpha=0.3)#
+p#
+#
+p <- ggplot(dress1[Size!=""], aes(x=Waist))+geom_density(aes(group=Size, colour= Size, fill= Size), alpha=0.3)#
+p
+dress1 = dat[dressTitle%in%c("Kind Intentions Dress") & Fit%in%c("Small")  & !is.na(Hips) & !is.na(Waist)]#
+#
+#what i want to do is make an overlapping #
+p <- ggplot(dress1[Size!=""], aes(x=Hips))+geom_density(aes(group=Size, colour= Size, fill= Size), alpha=0.3)#
+p#
+#
+p <- ggplot(dress1[Size!=""], aes(x=Waist))+geom_density(aes(group=Size, colour= Size, fill= Size), alpha=0.3)#
+p
+dat$Bra
+unique(dat$Bra)
+dat[, c("Band", "Cup") := tstrsplit(Bra, " ", fixed=TRUE)]
+name(dat)
+names(dat)
+sort(unique(dat$Bra))
+table(dat$Bra)
+sort(table(dat$Bra))
+dat[, Bra1:=gsub("^\\s+|\\s+$", "", Bra)]
+sort(table(dat$Bra1))
+dat[, Bra:=gsub("^\\s+|\\s+$", "", Bra)]
+unique(dat$Quality)
+dress1 = dat[dressTitle%in%c("Kind Intentions Dress") & Fit%in%c("Small")  & !is.na(Hips) & !is.na(Waist)]#
+#
+#what i want to do is make an overlapping #
+p <- ggplot(dress1[Size!=""], aes(x=Hips))+geom_density(aes(group=Size, colour= Size, fill= Size), alpha=0.3)#
+p
+dress1 = dat[dressTitle%in%c("Kind Intentions Dress") & Fit%in%c("Just Right")  & !is.na(Hips) & !is.na(Waist)]#
+#
+#what i want to do is make an overlapping #
+p <- ggplot(dress1[Size!=""], aes(x=Hips))+geom_density(aes(group=Size, colour= Size, fill= Size), alpha=0.3)#
+p#
+#
+p <- ggplot(dress1[Size!=""], aes(x=Waist))+geom_density(aes(group=Size, colour= Size, fill= Size), alpha=0.3)#
+p
+dat[Fit=="Just Right",Fit.Num:=3]#
+dat[Fit=="Small",Fit.Num:=2]#
+dat[Fit=="Large",Fit.Num:=4]#
+dat[Fit=="Very Large",Fit.Num:=5]#
+dat[Fit=="Very Small",Fit.Num:=1]
+hist(dat$Fit.Num)
+p <- ggplot(dat, aes(x=Fit.Num))+geom_boxplot(aes(group=Size))#
+p
+?geom_boxplot
+p <- ggplot(dat, aes(x=Fit.Num,group=Size))+geom_boxplot(stat="identity")#
+p
+?geom_boxplot
+p <- ggplot(dat, aes(x=Fit.Num,group=Size))+geom_boxplot()#
+p
+p <- ggplot(dat, aes(y=Fit.Num,x=Size))+geom_boxplot()#
+p
+class(dat$Fit.Num)
+p <- ggplot(dat[!is.na(Fit.Num) & Size%in%c("S","M","L","XL")], aes(y=Fit.Num,x=Size))+geom_boxplot()#
+p
+p <- ggplot(dat[!is.na(Hips) & Size%in%c("S","M","L","XL")], aes(x=Hips,x=Size))+geom_boxplot()#
+p
+p <- ggplot(dat[!is.na(Hips) & Size%in%c("S","M","L","XL")], aes(y=Hips,x=Size))+geom_boxplot()#
+p
+p <- ggplot(dat[!is.na(Hips) & Size%in%c("S","M","L","XL","2X","3X")], aes(y=Hips,x=Size))+geom_boxplot()#
+p
+p <- ggplot(dat[!is.na(Waist) & Size%in%c("S","M","L","XL","2X","3X")], aes(y=Hips,x=Size))+geom_boxplot()#
+p
+dat$Size = factor(dat$Size,levels=c("S","M","L","XL","2X","3X"))#
+p <- ggplot(dat[!is.na(Hips) & Size%in%c("S","M","L","XL","2X","3X")], aes(y=Hips,x=Size))+geom_boxplot()#
+p#
+#
+p <- ggplot(dat[!is.na(Waist) & Size%in%c("S","M","L","XL","2X","3X")], aes(y=Hips,x=Size))+geom_boxplot()#
+p
+p <- ggplot(dat[!is.na(Waist) & Size%in%c("S","M","L","XL","2X","3X")], aes(y=Waist,x=Size))+geom_boxplot()#
+p
+p <- ggplot(dat[!is.na(Waist) & Size%in%c("S","M","L","XL","2X","3X")], aes(y=Hips/Waist,x=Size))+geom_boxplot()#
+p
